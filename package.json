@@ -1,0 +1,33 @@
+{
+  "name": "stdocs",
+  "version": "1.0.0",
+  "description": "Static Documentation with Markdown",
+  "keywords": [
+    "stdocs",
+    "StDocs",
+    "Static documentation",
+    "static site generator",
+    "git site generator",
+    "documentation generator",
+    "documentation"
+  ],
+  "homepage": "https://github.com/Spectra010s/stdocs#readme",
+  "bugs": {
+    "url": "https://github.com/Spectra010s/stdocs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spectra010s/stdocs.git"
+  },
+  "license": "MIT",
+  "author": "Spectra010s",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "stdocs": "dist/cli.js"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
