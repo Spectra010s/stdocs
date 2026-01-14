@@ -1,33 +1,34 @@
 {
-  "name": "stdocs",
+  "name": "stdocs-monorepo",
   "version": "1.0.0",
-  "description": "Static Documentation with Markdown",
+  "private": true,
+  "description": "Static Documentation Generator with SDCL",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/*",
+    "test": "npm run test -w packages/* --if-present",
+    "dev": "npm run dev -w packages/stdocs"
+  },
   "keywords": [
     "stdocs",
-    "StDocs",
-    "Static documentation",
-    "static site generator",
-    "git site generator",
-    "documentation generator",
+    "stl8",
+    "sdcl",
+    "static-site-generator",
     "documentation"
   ],
-  "homepage": "https://github.com/Spectra010s/stdocs#readme",
-  "bugs": {
-    "url": "https://github.com/Spectra010s/stdocs/issues"
-  },
+  "author": "Spectra010s",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Spectra010s/stdocs.git"
   },
-  "license": "MIT",
-  "author": "Spectra010s",
-  "type": "module",
-  "main": "dist/index.js",
-  "bin": {
-    "stdocs": "dist/cli.js"
+  "homepage": "https://github.com/Spectra010s/stdocs#readme",
+  "bugs": {
+    "url": "https://github.com/Spectra010s/stdocs/issues"
   },
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
