@@ -21,8 +21,6 @@ export enum TokenType {
   BOOLEAN = 'BOOLEAN',           // true, false
   LBRACE = 'LBRACE',             // {
   RBRACE = 'RBRACE',             // }
-  LBRACKET = 'LBRACKET',         // [
-  RBRACKET = 'RBRACKET',         // ]
   DASH = 'DASH',                 // - (list items)
   COLON = 'COLON',               // : (property assignment)
   COMMENT = 'COMMENT',           // # comment

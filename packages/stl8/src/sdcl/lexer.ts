@@ -76,8 +76,6 @@ export class Lexer {
     // Delimiters and Operators
     if (char === '{') { this.advance(); return this.createToken(TokenType.LBRACE, '{'); }
     if (char === '}') { this.advance(); return this.createToken(TokenType.RBRACE, '}'); }
-    if (char === '[') { this.advance(); return this.createToken(TokenType.LBRACKET, '['); }
-    if (char === ']') { this.advance(); return this.createToken(TokenType.RBRACKET, ']'); }
     if (char === ':') { this.advance(); return this.createToken(TokenType.COLON, ':'); }
     if (char === '-') { this.advance(); return this.createToken(TokenType.DASH, '-'); }
 
