@@ -1,6 +1,6 @@
 {
   "name": "stl8",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "The core engine and SDCL parser for static documentation generation",
   "keywords": [
     "stl8",
