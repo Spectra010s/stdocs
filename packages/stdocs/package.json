@@ -1,0 +1,59 @@
+{
+  "name": "stdocs",
+  "version": "0.1.0",
+  "description": "Static Documentation with Markdown",
+  "keywords": [
+    "stdocs",
+    "stl8",
+    "sdcl",
+    "static-site-generator",
+    "documentation",
+    "documentation generator",
+    "cli",
+    "markdown"
+  ],
+  "homepage": "https://github.com/Spectra010s/stdocs#readme",
+  "bugs": {
+    "url": "https://github.com/Spectra010s/stdocs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spectra010s/stdocs.git",
+    "directory": "packages/stdocs"
+  },
+  "license": "MIT",
+  "author": "Spectra010s",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "stdocs": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "stl8": "^1.0.0",
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
