@@ -1,0 +1,68 @@
+{
+  "name": "stl8",
+  "version": "1.0.0",
+  "description": "The core engine and SDCL parser for static documentation generation",
+  "keywords": [
+    "stl8",
+    "sdcl",
+    "SSG",
+    "static-site-generator",
+    "documentation",
+    "markdown",
+    "parser"
+  ],
+  "homepage": "https://github.com/Spectra010s/stdocs#readme",
+  "bugs": {
+    "url": "https://github.com/Spectra010s/stdocs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spectra010s/stdocs.git",
+    "directory": "packages/stl8"
+  },
+  "license": "MIT",
+  "author": "Spectra010s",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./sdcl": {
+      "types": "./dist/sdcl/index.d.ts",
+      "import": "./dist/sdcl/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.9.0",
+    "lunr": "^2.3.9",
+    "marked": "^12.0.0",
+    "serve-handler": "^6.1.5",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@types/lunr": "^2.3.7",
+    "@types/node": "^20.11.0",
+    "@types/serve-handler": "^6.1.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
